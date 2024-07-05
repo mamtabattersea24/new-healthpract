@@ -998,13 +998,13 @@ details[open]>summary::before {
     opacity: 0;
     transition: all 0.3s ease-in-out;
     transform-style: preserve-3d;
-    transform: rotateY(-60deg) translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotateY(-60deg);
     transform-origin: center;
     
 }
 .play-poppup.open{
     opacity: 1;
-    transform: rotateY(0deg) translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotateY(0deg) ;
 
 }
 .close-youtube{
