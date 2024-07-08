@@ -528,6 +528,10 @@ footer p {
   border-radius: 5px !important;
   border: none;
 }
+.footer-contact .btn-fill:hover{
+  color: #fff;
+  background: linear-gradient(45deg, #0cb8b6 0%, #013742 100%);
+}
 
 .footer-social .social-media ul {
   justify-content: end;
