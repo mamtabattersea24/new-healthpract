@@ -1047,6 +1047,9 @@ details[open]>summary::before {
     z-index: 2;
     display: none;
 }
+.close-youtube svg{
+    fill: #fff;
+}
 .overlay::before{
     width: 100%;
     height: 100%;
@@ -1105,12 +1108,19 @@ details[open]>summary::before {
 @media (max-width:768px) {
     .hero-content {
         grid-template-columns: auto;
-        gap: 40px;
+        gap: 20px;
     }
 
     .hero-content .btn-fill {
         margin: 0;
         border-radius: 50px;
+    }
+    .footer-contact .btn-fill{
+       padding: 10px 20px;
+       margin-left: unset;
+    }
+    .footer-contact .h5{
+        font-size: 1.5rem;
     }
 }
 

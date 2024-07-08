@@ -79,6 +79,7 @@ button {
   background: var(--color-gradient);
   color: var(--white-color);
   display: inline-block;
+  font-size: 18px;
 }
 
 .mb-0 {
@@ -393,8 +394,11 @@ header ul li:first-child::before,
 
 .hp-card:not(:last-child),
 .hp-overlay-card:not(:last-child) {
-  border-radius: 10px;
   margin-bottom: 30px;
+}
+.hp-card,
+.hp-overlay-card {
+  border-radius: 10px;
 }
 
 :is(.hp-card, .card-content) :is(.card-title, p),
@@ -1463,6 +1467,20 @@ button:is(.button-next, .button-prev)[disabled] svg path {
 }
 
 @media screen and (max-width: 600px) {
+
+  .play-btn .circle {
+    width: 50px !important;  
+    height: 50px !important;
+}
+
+  .play-poppup iframe{
+    width: 300px !important;
+    height: 200PX !important;
+  }
+
+  .hero-content {
+    padding: 20px !important;
+}
   .footer-social .social-media ul{
     justify-content: unset;
     margin-top: 20px;
