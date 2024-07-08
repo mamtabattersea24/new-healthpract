@@ -391,8 +391,8 @@ header ul li:first-child::before,
   margin-bottom: 0;
 }
 
-.hp-card,
-.hp-overlay-card {
+.hp-card:not(:last-child),
+.hp-overlay-card:not(:last-child) {
   border-radius: 10px;
   margin-bottom: 30px;
 }

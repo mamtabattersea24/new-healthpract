@@ -904,7 +904,13 @@ details[open]>summary::before {
     align-items: center;
     gap: 5px;
 }
+.guide .btn-outline:hover{
+    border:1px solid var(--primary-color);
+}
 
+.guide .btn-outline:hover svg{
+    stroke:#fff;
+}
 
 
 /* tool box scroll */
