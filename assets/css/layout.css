@@ -499,7 +499,7 @@ header ul li:first-child::before,
 }
 
 /* footer start*/
-footer>.container {
+footer>.container{
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -509,16 +509,28 @@ footer p {
   margin-bottom: 0 !important;
 }
 
-footer .footer-bg:first-of-type {
+.footer-bg {
+  flex-direction: column;
+  display: flex;
+  gap: 15px;
+  border-radius: 5px;
   padding: 35px;
+  text-align: center;
 }
 
-.footer-bg {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
+.footer-contact{
   border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.footer-contact .btn-fill{
+  margin-left: auto;
+  border-radius: 5px !important;
+  border: none;
+}
+
+.footer-social .social-media ul {
+  justify-content: end;
 }
 
 footer ul {
@@ -532,11 +544,6 @@ footer ul {
 
 footer .footer-list {
   margin-bottom: 20px;
-}
-
-footer .col-lg-8:last-of-type>div {
-  flex-direction: column;
-  height: 100%;
 }
 
 .social-media ul {
@@ -1164,7 +1171,14 @@ button:is(.button-next, .button-prev)[disabled] svg path {
   .container {
     max-width: 720px;
   }
-
+  .col-md-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
   .col-md-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
@@ -1184,6 +1198,15 @@ button:is(.button-next, .button-prev)[disabled] svg path {
     flex: 0 0 auto;
     width: 66.66666667%;
   }
+  .col-md-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  .col-md-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -1436,6 +1459,13 @@ button:is(.button-next, .button-prev)[disabled] svg path {
 }
 
 @media screen and (max-width: 600px) {
+  .footer-social .social-media ul{
+    justify-content: unset;
+    margin-top: 20px;
+  }
+  .footer-contact .btn-fill{
+    margin-left: unset;
+  }
   .sep {
     font-size: 24px;
   }
